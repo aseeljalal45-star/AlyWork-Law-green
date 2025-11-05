@@ -1,0 +1,32 @@
+
+:root {
+  --bg: #111111;
+  --text: #EAEAEA;
+  --muted: #bdbdbd;
+  --accent-1: linear-gradient(90deg, #1e3a8a, #3b82f6);
+  --accent-2: linear-gradient(90deg, #b58900, #f6c34d);
+}
+body, .block-container {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 8px;
+  border-radius: 12px;
+}
+.logo {
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  padding: 12px;
+}
+.title-area h1 { margin: 0; font-size: 28px; color: var(--text); }
+.subtitle { margin: 4px 0 0 0; color: var(--muted); font-size: 14px; }
+.stSidebar { background: #0b0b0b !important; }
+.stButton>button { border-radius: 8px; padding: 8px 12px; background: linear-gradient(90deg,#1e3a8a,#3b82f6); color: white; }
