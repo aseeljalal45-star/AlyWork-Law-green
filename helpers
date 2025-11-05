@@ -1,0 +1,64 @@
+import streamlit as st
+
+# إعداد التصميم العام
+def set_custom_style():
+    st.markdown("""
+        <style>
+        /* الخلفية */
+        .stApp {
+            background-color: #111 !important;
+            color: #EAEAEA !important;
+        }
+
+        /* العنوان */
+        h1, h2, h3, h4, h5, h6 {
+            color: #EAEAEA !important;
+        }
+
+        /* الأزرار */
+        div.stButton > button:first-child {
+            background: linear-gradient(90deg, #0057B7, #FFD700);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 0.6em 1.2em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        div.stButton > button:first-child:hover {
+            background: linear-gradient(90deg, #0045A0, #E6BE00);
+            transform: scale(1.03);
+        }
+
+        /* صناديق النص */
+        .stTextInput > div > div > input {
+            background-color: #1E1E1E;
+            color: #EAEAEA;
+            border: 1px solid #333;
+        }
+
+        /* الجداول */
+        table {
+            color: #EAEAEA !important;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+
+# مكون واجهة: الشعار والعنوان الرئيسي
+def show_header():
+    st.markdown("""
+        <div style="text-align:center; margin-bottom: 30px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png" width="90">
+            <h1 style="margin-top:10px; color:#EAEAEA;">منصة قانون العمل الأردني الذكية ⚖️</h1>
+            <p style="color:#BBBBBB;">نظام متكامل لمساعدة العمال، أصحاب العمل، والمفتشين على تطبيق القانون بسهولة.</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+
+# مكون واجهة: أزرار التنقل
+def navigation_menu():
+    st.markdown("""
+        <div style="display: flex; justify-content: center; gap: 12px; margin-top: 25px;">
+            <a href="?page=workers" class="nav-btn">👷 العمال</a>
+            <
